@@ -1,0 +1,70 @@
+<!--單欄圖片呈現-->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>夏日展場網頁名片</title>
+    <link rel="stylesheet" href="basic.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <!--1080px*600px 72dpi-->
+      <img src="images/2025 banner_ver1.jpg" alt="Banner" />
+    </div>
+
+    <!--第2版-->
+    <div class="icon-bar">
+      <div class="icon-button all" data-member="all">全部</div>
+      <div class="icon-button" data-member="a">
+        <img src="images/靛青檸檬(去背).png" alt="A子" />
+      </div>
+      <div class="icon-button" data-member="b">
+        <!-- <div class="icon-button" onclick="setTheme('b')"> -->
+        <img src="images/靛青檸檬(去背).png" alt="B子" />
+      </div>
+      <!-- <div class="icon-button" onclick="setTheme('c')"> -->
+      <div class="icon-button" data-member="c">
+        <img src="images/靛青檸檬(去背).png" alt="C子" />
+      </div>
+    </div>
+
+    <!--抓第2版改瀏覽形式-->
+    <div class="view-model">
+      <div class="view-model-page" id="view-model-model1">單欄</div>
+      <div class="view-model-page" id="view-model-model2">雙欄</div>
+      <div class="view-model-page" id="view-model-model3">三欄</div>
+    </div>
+
+    <div class="products model-1" id="productContainer">
+      <!--預設讀取單欄model-1-->
+      <!--1-->
+      <div class="card a">
+        <h3>Plave_諾亞B5本</h3>
+        <img src="./images/紅星/本子.png" alt="A商品" width="100%" />
+        <p>NT$ 80</p>
+      </div>
+      <!--2-->
+      <div class="card b">
+        <h3>原創貼紙_斑斑的種瓜日記</h3>
+        <img
+          src="./images/綠音/A6 11310月原創貼紙.png"
+          alt="A商品"
+          width="80%"
+        />
+        <p>NT$ 80</p>
+      </div>
+      <!--3-->
+      <div class="card c">
+        <h3>C的海風明信片</h3>
+        <img src="c-product.jpg" alt="C商品" width="100%" />
+        <p>NT$ 60</p>
+      </div>
+      <!--商品結束-->
+    </div>
+    <footer>
+      <p>&copy; 2025 黃瓜邪教</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!--Germin 暫不採用-->
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的夏季作品集</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Inter 字體 */
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden; /* 防止水平滾動 */
+      }
+      /* 自定義滾動條樣式，使其在手機上不那麼突兀 */
+      body::-webkit-scrollbar {
+        width: 8px;
+      }
+      body::-webkit-scrollbar-track {
+        background: #ebf6f5; /* 淺灰白 */
+      }
+      body::-webkit-scrollbar-thumb {
+        background: #d8b888; /* 淺棕色 */
+        border-radius: 10px;
+      }
+      /* 隱藏預設滾動條在 Firefox */
+      body {
+        scrollbar-width: thin;
+        scrollbar-color: #d8b888 #ebf6f5;
+      }
+    </style>
+  </head>
+  <body class="bg-[#EBF6F5] text-gray-800">
+    <!-- 導航列 -->
+    <header class="bg-[#86C4D2] shadow-md fixed w-full top-0 z-50 rounded-b-lg">
+      <nav
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold text-white rounded-md px-2 py-1"
+          >我的作品</a
+        >
+
+        <!-- 手機版漢堡選單按鈕 -->
+        <button
+          id="menu-button"
+          class="md:hidden text-white focus:outline-none p-2 rounded-md transition duration-300 ease-in-out hover:bg-white hover:text-[#86C4D2]"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- 電腦版導航選單 -->
+        <ul class="hidden md:flex space-x-6">
+          <li>
+            <a
+              href="#hero"
+              class="text-white hover:text-[#D8B888] transition duration-300 ease-in-out font-medium rounded-md px-3 py-2"
+              >首頁</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-white hover:text-[#D8B888] transition duration-300 ease-in-out font-medium rounded-md px-3 py-2"
+              >關於我</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              class="text-white hover:text-[#D8B888] transition duration-300 ease-in-out font-medium rounded-md px-3 py-2"
+              >作品集</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-white hover:text-[#D8B888] transition duration-300 ease-in-out font-medium rounded-md px-3 py-2"
+              >聯絡我</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 手機版側邊菜單 (預設隱藏) -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#86C4D2] w-full py-4 transition-all duration-300 ease-in-out origin-top rounded-b-lg"
+      >
+        <ul class="flex flex-col items-center space-y-4">
+          <li>
+            <a
+              href="#hero"
+              class="text-white hover:text-[#D8B888] transition duration-300 ease-in-out font-medium rounded-md px-3 py-2 block w-full text-center"
+              >首頁</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-white hover:text-[#D8B888] transition duration-300 ease-in-out font-medium rounded-md px-3 py-2 block w-full text-center"
+              >關於我</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              class="text-white hover:text-[#D8B888] transition duration-300 ease-in-out font-medium rounded-md px-3 py-2 block w-full text-center"
+              >作品集</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-white hover:text-[#D8B888] transition duration-300 ease-in-out font-medium rounded-md px-3 py-2 block w-full text-center"
+              >聯絡我</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 英雄區塊 (Hero Section) -->
+    <section
+      id="hero"
+      class="relative bg-[#86C4D2] flex items-center justify-center min-h-screen pt-16 rounded-b-3xl overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-[#86C4D2] to-blue-400 opacity-80"
+      ></div>
+      <div class="relative container mx-auto px-6 py-16 text-center text-white">
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-lg"
+        >
+          感受夏日，探索我的創作世界
+        </h1>
+        <p class="text-lg sm:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+          在這裡，您可以盡情沉浸於充滿陽光與活力的藝術作品中。
+        </p>
+        <a
+          href="#portfolio"
+          class="inline-block bg-[#D8B888] text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition transform hover:scale-105 duration-300 ease-in-out"
+        >
+          立即探索作品
+        </a>
+      </div>
+      <!-- 裝飾性波浪 -->
+      <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+        <svg
+          class="relative block w-[calc(100%+1.3px)] h-[100px]"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.35-16.63-250.46.09-82.7,16.73-164.87,33.06-250.36,19.34C176.16,33.35,126.33,73,80,103.11V120H1200V92.83C1130.17,73.33,1053.58,52.34,985.66,92.83Z"
+            class="fill-[#EBF6F5]"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- 關於我區塊 -->
+    <section
+      id="about"
+      class="container mx-auto px-6 py-20 bg-[#EBF6F5] text-center rounded-lg shadow-md my-12"
+    >
+      <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-[#86C4D2]">關於我</h2>
+      <div class="max-w-3xl mx-auto text-lg leading-relaxed">
+        <p class="mb-4">
+          哈囉！我是一位熱愛創作的藝術家，沉迷於將夏日的陽光、海風與自然元素轉化為獨特的藝術語言。我的作品旨在捕捉生活中那些稍縱即逝的美好瞬間，並透過色彩與筆觸賦予它們永恆的生命力。
+        </p>
+        <p class="mb-4">
+          從溫暖的沙灘色調到清新的海洋藍綠，我的創作中充滿了對夏季的無盡熱愛與想像。希望我的作品能為您帶來一絲涼意與無限的靈感。
+        </p>
+        <p>感謝您撥冗瀏覽我的作品集，期待與您交流！</p>
+      </div>
+    </section>
+
+    <!-- 作品集區塊 -->
+    <section
+      id="portfolio"
+      class="container mx-auto px-6 py-20 bg-white rounded-lg shadow-md my-12"
+    >
+      <h2
+        class="text-3xl sm:text-4xl font-bold mb-12 text-[#86C4D2] text-center"
+      >
+        我的作品集
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 作品卡片 1 -->
+        <div
+          class="portfolio-item bg-[#EBF6F5] rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:scale-105 duration-300 ease-in-out"
+          data-title="夏日海灘"
+          data-description="這幅作品捕捉了夏日海灘上陽光灑落的瞬間，呈現出寧靜而溫馨的氛圍。透過柔和的色彩與細膩的光影處理，表達了對大自然的敬畏與熱愛。"
+          data-image="https://placehold.co/600x450/D8B888/EBF6F5?text=作品1"
+        >
+          <img
+            src="https://placehold.co/600x450/D8B888/EBF6F5?text=作品1"
+            alt="作品1"
+            class="w-full h-56 object-cover object-center rounded-t-xl"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-[#86C4D2]">夏日海灘</h3>
+            <p class="text-gray-600 text-sm">油畫，2024</p>
+          </div>
+        </div>
+
+        <!-- 作品卡片 2 -->
+        <div
+          class="portfolio-item bg-[#EBF6F5] rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:scale-105 duration-300 ease-in-out"
+          data-title="藍色熱帶魚"
+          data-description="一幅充滿活力的數碼插畫，描繪了在清澈海水中自由遨遊的熱帶魚群。作品運用鮮明的藍色調，展現了海洋生物的生命力與多樣性。"
+          data-image="https://placehold.co/600x450/86C4D2/EBF6F5?text=作品2"
+        >
+          <img
+            src="https://placehold.co/600x450/86C4D2/EBF6F5?text=作品2"
+            alt="作品2"
+            class="w-full h-56 object-cover object-center rounded-t-xl"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-[#86C4D2]">
+              藍色熱帶魚
+            </h3>
+            <p class="text-gray-600 text-sm">數碼插畫，2023</p>
+          </div>
+        </div>
+
+        <!-- 作品卡片 3 -->
+        <div
+          class="portfolio-item bg-[#EBF6F5] rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:scale-105 duration-300 ease-in-out"
+          data-title="日落餘暉"
+          data-description="透過攝影作品捕捉了夕陽西下時天空被染成橙紅色的壯麗景象。這不僅是對自然美的讚頌，也是對時間流逝的思考。"
+          data-image="https://placehold.co/600x450/D8B888/86C4D2?text=作品3"
+        >
+          <img
+            src="https://placehold.co/600x450/D8B888/86C4D2?text=作品3"
+            alt="作品3"
+            class="w-full h-56 object-cover object-center rounded-t-xl"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-[#86C4D2]">日落餘暉</h3>
+            <p class="text-gray-600 text-sm">攝影，2024</p>
+          </div>
+        </div>
+
+        <!-- 作品卡片 4 -->
+        <div
+          class="portfolio-item bg-[#EBF6F5] rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:scale-105 duration-300 ease-in-out"
+          data-title="海風輕語"
+          data-description="一組雕塑作品，以流線型的造型和透明的材質，營造出海風輕拂的動態感。象徵著自由與無限的可能。"
+          data-image="https://placehold.co/600x450/86C4D2/D8B888?text=作品4"
+        >
+          <img
+            src="https://placehold.co/600x450/86C4D2/D8B888?text=作品4"
+            alt="作品4"
+            class="w-full h-56 object-cover object-center rounded-t-xl"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-[#86C4D2]">海風輕語</h3>
+            <p class="text-gray-600 text-sm">雕塑，2023</p>
+          </div>
+        </div>
+
+        <!-- 作品卡片 5 -->
+        <div
+          class="portfolio-item bg-[#EBF6F5] rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:scale-105 duration-300 ease-in-out"
+          data-title="仲夏夜之夢"
+          data-description="這件多媒體裝置藝術，結合了燈光、聲音與投影，營造出一個夢幻般的夏季夜晚。觀眾可以在其中體驗到沉浸式的感官之旅。"
+          data-image="https://placehold.co/600x450/D8B888/EBF6F5?text=作品5"
+        >
+          <img
+            src="https://placehold.co/600x450/D8B888/EBF6F5?text=作品5"
+            alt="作品5"
+            class="w-full h-56 object-cover object-center rounded-t-xl"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-[#86C4D2]">
+              仲夏夜之夢
+            </h3>
+            <p class="text-gray-600 text-sm">裝置藝術，2024</p>
+          </div>
+        </div>
+
+        <!-- 作品卡片 6 -->
+        <div
+          class="portfolio-item bg-[#EBF6F5] rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition transform hover:scale-105 duration-300 ease-in-out"
+          data-title="熱帶水果盛宴"
+          data-description="一系列充滿童趣的繪本插畫，描繪了色彩繽紛的熱帶水果。作品旨在鼓勵人們享受生活中的甜蜜與簡單的快樂。"
+          data-image="https://placehold.co/600x450/86C4D2/D8B888?text=作品6"
+        >
+          <img
+            src="https://placehold.co/600x450/86C4D2/D8B888?text=作品6"
+            alt="作品6"
+            class="w-full h-56 object-cover object-center rounded-t-xl"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-[#86C4D2]">
+              熱帶水果盛宴
+            </h3>
+            <p class="text-gray-600 text-sm">繪本插畫，2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 聯絡我區塊 -->
+    <section
+      id="contact"
+      class="bg-[#86C4D2] py-20 text-white rounded-t-3xl shadow-lg mt-12"
+    >
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-8">聯絡我</h2>
+        <p class="text-lg mb-8 max-w-2xl mx-auto">
+          如果您對我的作品感興趣，或有任何合作機會，歡迎隨時與我聯繫！
+        </p>
+        <div class="flex flex-col items-center space-y-4">
+          <a
+            href="mailto:your.email@example.com"
+            class="bg-[#D8B888] text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-opacity-90 transition transform hover:scale-105 duration-300 ease-in-out flex items-center"
+          >
+            <svg
+              class="w-6 h-6 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-6 6a2 2 0 01-2 2H9a2 2 0 01-2-2V7a2 2 0 012-2h6a2 2 0 012 2v7z"
+              ></path>
+            </svg>
+            寄送電子郵件
+          </a>
+          <p class="text-sm text-gray-200">
+            您也可以在社群媒體上找到我：<br class="md:hidden" />
+            <a href="#" class="text-[#D8B888] hover:underline mx-2"
+              >Instagram</a
+            >
+            |
+            <a href="#" class="text-[#D8B888] hover:underline mx-2">Facebook</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="bg-[#EBF6F5] py-8 text-center text-gray-600 text-sm">
+      <div class="container mx-auto px-4">
+        &copy; 2024 我的夏季作品集. 版權所有.
+      </div>
+    </footer>
+
+    <!-- 作品細節彈出視窗 (Modal) -->
+    <div
+      id="portfolio-modal"
+      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 hidden opacity-0 transition-opacity duration-300 ease-in-out"
+    >
+      <div
+        class="bg-white rounded-xl shadow-xl max-w-2xl w-full p-6 relative transform scale-95 transition-transform duration-300 ease-in-out"
+      >
+        <button
+          id="close-modal"
+          class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold focus:outline-none rounded-full bg-gray-200 w-10 h-10 flex items-center justify-center transition duration-300 ease-in-out hover:bg-gray-300"
+        >
+          &times;
+        </button>
+        <img
+          id="modal-image"
+          src=""
+          alt="作品圖片"
+          class="w-full h-auto object-contain max-h-96 rounded-lg mb-6 shadow-md"
+        />
+        <h3
+          id="modal-title"
+          class="text-2xl font-bold mb-3 text-[#86C4D2]"
+        ></h3>
+        <p id="modal-description" class="text-gray-700 leading-relaxed"></p>
+      </div>
+    </div>
+
+    <script>
+      // 平滑滾動功能
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            // 考慮固定導航列的高度
+            const headerOffset = document.querySelector("header").offsetHeight;
+            const elementPosition =
+              targetElement.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = elementPosition - headerOffset - 20; // 額外調整空間
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // 手機漢堡選單邏輯
+      const menuButton = document.getElementById("menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        if (!mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.add("animate-slideDown");
+        } else {
+          mobileMenu.classList.remove("animate-slideDown");
+        }
+      });
+
+      // 當點擊手機選單連結時，關閉菜單
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          mobileMenu.classList.remove("animate-slideDown");
+        });
+      });
+
+      // 作品集彈出視窗邏輯
+      const portfolioItems = document.querySelectorAll(".portfolio-item");
+      const portfolioModal = document.getElementById("portfolio-modal");
+      const closeModalButton = document.getElementById("close-modal");
+      const modalImage = document.getElementById("modal-image");
+      const modalTitle = document.getElementById("modal-title");
+      const modalDescription = document.getElementById("modal-description");
+
+      portfolioItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const title = item.dataset.title;
+          const description = item.dataset.description;
+          const image = item.dataset.image;
+
+          modalTitle.textContent = title;
+          modalDescription.textContent = description;
+          modalImage.src = image;
+
+          portfolioModal.classList.remove("hidden");
+          setTimeout(() => {
+            portfolioModal.classList.remove("opacity-0");
+            portfolioModal.querySelector("div").classList.remove("scale-95");
+          }, 10); // 短暫延遲以觸發過渡效果
+        });
+      });
+
+      closeModalButton.addEventListener("click", () => {
+        portfolioModal.classList.add("opacity-0");
+        portfolioModal.querySelector("div").classList.add("scale-95");
+        setTimeout(() => {
+          portfolioModal.classList.add("hidden");
+        }, 300); // 等待過渡完成再隱藏
+      });
+
+      // 點擊彈出視窗外部關閉
+      portfolioModal.addEventListener("click", (e) => {
+        if (e.target === portfolioModal) {
+          closeModalButton.click();
+        }
+      });
+    </script>
+  </body>
+</html>
