@@ -1,5 +1,5 @@
 [{
-    "title":"Plave_諾亞B5本",
+    "title":"Plave_諾亞A5本",
     "image": "./images/A/本子.png",
     "price": 80,
     "author": "a"
@@ -18,7 +18,7 @@
   },
   {
     "title": "Plave_常服小立牌",
-    "image":"./images/A/小立牌1.jpg",
+    "image":"./images/A/小立牌2.jpg",
     "price": 80,
     "author": "a"
   },
