@@ -1,32 +1,38 @@
 [{
     "title":"Plave_諾亞B5本",
-    "image": "./images/紅星/本子.png",
+    "image": "./images/A_Redstar/本子.png",
     "price": 80,
     "author": "a"
 },
-{
-    "title": "A的水滴徽章",
-    "image": "a-product.jpg",
-    "price": 120,
-    "author": "a"
-  },
   {
     "title": "原創貼紙_斑斑的種瓜日記",
-    "image":"./images/綠音/A6 11310月原創貼紙.png",
+    "image":"./images/B_Luyee/A6 11310月原創貼紙.png",
     "price": 80,
     "author": "b"
   },
   {
     "title": "Plave_打歌小立牌",
-    "image":"./images/紅星/小立牌1.jpg",
+    "image":"./images/A_Redstar/小立牌1.jpg",
     "price": 80,
     "author": "a"
   },
   {
     "title": "Plave_常服小立牌",
-    "image":"./images/紅星/小立牌1.jpg",
+    "image":"./images/A_Redstar/小立牌1.jpg",
     "price": 80,
     "author": "a"
+  },
+  {
+    "title": "Plave_貼紙",
+    "image":"./images/A_Redstar/貼紙.jpg",
+    "price": 80,
+    "author": "a"
+  },
+  {
+    "title": "10cm娃-手織披肩",
+    "image":"./images/C_Snowbell/披肩.jpg",
+    "price": 100,
+    "author": "c"
   }
 
 ]

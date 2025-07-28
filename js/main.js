@@ -116,7 +116,7 @@ function renderCards(cards) {
     <h3>${item.title}</h3>
       <img src="${item.image}" alt="${item.title}" width="100%" />   
       <p>NT$ ${item.price}</p>
-      <button>購買</button>
+      <button>詳細</button>
     `;
 
     container.appendChild(card);
