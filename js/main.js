@@ -113,9 +113,13 @@ function renderCards(cards) {
     card.className = `card ${item.author.toLowerCase()}`;
 
     card.innerHTML = `
-    <h3>${item.title}</h3>
-      <img src="${item.image}" alt="${item.title}" width="100%" />   
-      <p>NT$ ${item.price}</p>
+    <h3>${item.title}</h3>`;
+    if (item.image) {
+      card.innerHTML += `<img src="${item.image}" alt="${item.title}" width="100%" />`;
+    } else if (item.iframe) {
+      card.innerHTML += `<iframe src="${item.iframe}" alt="${item.title}" width="${item.width}" height="${item.height}" />`;
+    }
+    card.innerHTML += `<p>NT$ ${item.price}</p>
       <button>詳細</button>
     `;
 
