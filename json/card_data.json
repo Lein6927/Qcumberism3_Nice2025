@@ -1,7 +1,8 @@
 [{
-    "title":"Plave_諾亞A5本",
+    "title":"Plave-諾亞生病了？！",
     "image": "./images/A/本子.png",
     "price": 80,
+    "note":"介紹:講述了諾亞生病的日常小故事，A5，共10頁",
     "author": "a"
 },
   {
@@ -11,29 +12,93 @@
     "author": "b"
   },
   {
-    "title": "Plave_打歌小立牌",
-    "image":"./images/A/小立牌1.jpg",
-    "price": 80,
-    "author": "a"
-  },
-  {
-    "title": "Plave_常服小立牌",
-    "image":"./images/A/小立牌2.jpg",
-    "price": 80,
-    "author": "a"
-  },
-  {
-    "title": "Plave_貼紙",
-    "image":"./images/A/貼紙.jpg",
-    "price": 80,
-    "author": "a"
-  },
-  {
     "title": "Plave全員貼紙",
     "iframe":"https://drive.google.com/file/d/1WDiwJOUvhalFiBg7i_srKEztKSAr7MrI/preview",
-    "width":380,
+    "width":320,
     "height":540,
     "price": 50,
+    "author": "a"
+  },
+{
+    "title": "Plave全員貼紙(透明)",
+    "iframe":"https://drive.google.com/file/d/1WCtboUYUWnOs0r9PCLwshYLE3VHTacVM/preview",
+    "width":320,
+    "height":540,
+    "price": 40,
+    "author": "a"
+  },
+  {
+    "title": "Plave-諾亞夜光板",
+ "iframe":"https://drive.google.com/file/d/188kIbmeA11QZjiLat-75-U8Dr46ybTNp/preview",
+    "width":320,
+    "height":540,
+    "price": 90,
+    "author": "a"
+  },
+  {
+    "title": "Plave-諾亞星星",
+ "iframe":"https://drive.google.com/file/d/18eZjmyl1HPWIrnoHm5QuUE-EROG-UBuE/preview",
+    "width":320,
+    "height":540,
+    "price": 50,
+    "author": "a"
+  },
+  {
+    "title": "Plave-自組板(打歌)",
+ "iframe":"https://drive.google.com/file/d/18c4HhHnmfgS6WOtS0RXKBGB8_3iaQG_h/preview",
+    "width":320,
+    "height":540,
+    "price": 120,
+    "author": "a"
+  },
+  {
+    "title": "Plave-自組板(常服)",
+ "iframe":"https://drive.google.com/file/d/18XYJzEzUkuMR0WkdrOWor5qii6pEd0Nc/preview",
+    "width":320,
+    "height":540,
+    "price": 120,
+    "author": "a"
+  },
+  {
+    "title": "Plave-4cm小立牌",
+ "iframe":"https://drive.google.com/file/d/18jPRHLm8kv3H_qTPiCZadfHW1xSDwER9/preview",
+    "width":320,
+    "height":540,
+    "price": 220,
+    "author": "a"
+  },
+  {
+    "title": "Plave明信片",
+ "iframe":"https://drive.google.com/file/d/18unTfR8GP31oATkkFC5hbELV2L7zO9M3/preview",
+    "width":320,
+    "height":540,
+    "price": 50,
+    "author": "a"
+  },
+  {
+    "title": "Plave郵票貼紙",
+ "iframe":"https://drive.google.com/file/d/18dBeiK1WVErSXfrJsVmBpiXWdvZyS3dG/preview",
+    "width":320,
+    "height":540,
+    "price": "0",
+    "note":"無料",
+    "author": "a"
+  },
+  {
+    "title": "原創-花瓣吊飾",
+ "iframe":"https://drive.google.com/file/d/18e1_-wT1vQwcLGdxmAzeKfUHoZZZIZ72/preview",
+    "width":320,
+    "height":540,
+    "price": "50",
+    "author": "a"
+  },
+  {
+    "title": "原創-盡家日常(26P)",
+ "iframe":"https://drive.google.com/file/d/1INjst994BaBiAk62SzsKChX84JPxgqA1/preview",
+    "width":320,
+    "height":540,
+    "price": "100",
+    "note":"本本介紹",
     "author": "a"
   },
   {

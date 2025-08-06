@@ -119,10 +119,10 @@ function renderCards(cards) {
     } else if (item.iframe) {
       card.innerHTML += `<iframe src="${item.iframe}" alt="${item.title}" width="${item.width}" height="${item.height}" />`;
     }
-    card.innerHTML += `<p>NT$ ${item.price}</p>
-      <button>詳細</button>
-    `;
-
+    card.innerHTML += `<p>NT$ ${item.price}</p>`;
+    if (item.note) {
+      card.innerHTML += `<p> ${item.note}</p>`;
+    }
     container.appendChild(card);
   });
   console.log("card" + cards);
