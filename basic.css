@@ -115,6 +115,15 @@ body {
   height: auto;
   object-fit: contain;
 }
+/*商品iframe 調整*/
+.card iframe {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4; /*可以維持圖片的正常比例 寬/高 */
+  display: block;
+  border: none;
+}
 
 .card h3 {
   margin: 0.5em 0 0.2em;
@@ -186,7 +195,7 @@ body {
   max-width: 320px;
 }
 .products.model-3 .card iframe {
-  max-width: 300px;
+  /* max-width: 300px; */
   max-height: 80%;
 }
 /*------------------------------*/
