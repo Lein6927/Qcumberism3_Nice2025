@@ -83,7 +83,10 @@ body {
   font-size: 1.3em;
   line-height: 50px;
 }
-
+.icon-button:active {
+  border: 2px solid #007bff; /* 藍色外框 */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); /* 外圍發光 */
+}
 /*圖片*/
 /*商品區域(綜合)*/
 .products {
