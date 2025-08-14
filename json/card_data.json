@@ -6,10 +6,16 @@
     "author": "a"
 },
   {
-    "title": "原創貼紙_斑斑的種瓜日記",
-    "image":"./images/B_Luyee/A6 11310月原創貼紙.png",
-    "price": 60,
+    "title": "皮克敏貼紙-",
+    "image":"./images/B_Luyee/Pikmin_貼紙_100X140mm.png",
+    "price": 40,
     "author": "b"
+  },
+  {
+    "title": "10cm娃-手織披肩",
+    "image":"./images/C_Snowbell/披肩.jpg",
+    "price": 100,
+    "author": "c"
   },
   {
     "title": "Plave全員貼紙",
@@ -101,11 +107,20 @@
     "note":"本本介紹",
     "author": "a"
   },
+  
   {
-    "title": "10cm娃-手織披肩",
-    "image":"./images/C_Snowbell/披肩.jpg",
-    "price": 100,
-    "author": "c"
+    "title": "海賊王-魯夫壓克力吊飾",
+    "image":"./images/B_Luyee/魯夫壓克力吊飾.png",
+    "price": 80,
+    "author": "b"
+  },
+  {
+    "title": "海賊王-魯夫5檔壓克力吊飾",
+    "image":"./images/B_Luyee/魯夫壓克力吊飾.png",
+    "price": 80,
+    "author": "b"
   }
+
+
 
 ]
